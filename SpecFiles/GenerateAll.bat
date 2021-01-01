@@ -5,11 +5,11 @@ move Content.resx ..\IncludeResources
 del GenerateResource.exe
 
 REM generate a fresh copy of parser.cs
-gppg /gplex /nolines gplex.y
+C:\repos\Arkeos\Converters\ArkeosDelphiAnalizer\packages\YaccLexTools.0.2.2\tools\gppg.exe /gplex /nolines gplex.y
 move parser.cs ..\GPLEX
 
 REM generate a fresh copy of Scanner.cs
-gplex gplex.lex
+C:\repos\Arkeos\Converters\ArkeosDelphiAnalizer\packages\YaccLexTools.0.2.2\tools\gplex.exe gplex.lex
 move Scanner.cs ..\GPLEX
 
 if not exist GplexBuffers.cs goto finish

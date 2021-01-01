@@ -1,0 +1,10 @@
+*.cache
+bin/Debug
+GPLEX/GplexBuffers.cs
+GPLEX/Parser.cs
+GPLEX/Scanner.cs
+obj
+SpecFiles/gplex.lst
+obj/Debug
+GPLEXv1.csproj.user
+GPLEXv1.csproj.old
